@@ -8,6 +8,9 @@ import Profile from "./pages/Profile";
 import Account from "./pages/Account";
 import Security from "./pages/Security";
 import Settings from "./pages/Settings";
+import Analytics from "./pages/Analytics";
+import Performance from "./pages/Performance";
+import Activity from "./pages/Activity";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/account" element={<Account />} />
           <Route path="/security" element={<Security />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/performance" element={<Performance />} />
+          <Route path="/activity" element={<Activity />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
